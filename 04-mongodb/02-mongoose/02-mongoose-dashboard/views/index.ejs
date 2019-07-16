@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mongoose Dashboard</title>
+</head>
+<body>
+    <h1>Animals!</h1>
+
+    <% for(const animal of animals){ %>
+        <p>Name: <a href="/animals/<%= animal._id %>"><%= animal.name %></a></p>
+        <p>Age: <%= animal.age %></p>
+    <% } %>
+
+    <a href="/animals/new">Create a New Animal!</a>
+</body>
+</html>
