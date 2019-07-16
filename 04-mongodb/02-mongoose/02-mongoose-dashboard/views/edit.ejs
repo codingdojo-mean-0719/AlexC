@@ -9,14 +9,14 @@
 <body>
     <h1>Edit Animal</h1>
 
-    <form action="/animals/<%= details[0]._id %>">
+    <form action="/animals/<%= details._id %>">
         <div>
             <label for="name">Name</label>
-            <input type="text" name="name" value="<%= details[0].name %>">
+            <input type="text" name="name" value="<%= details.name %>">
         </div>
         <div>
             <label for="age">Age</label>
-            <input type="text" name="age" value="<%= details[0].age %>">
+            <input type="text" name="age" value="<%= details.age %>">
         </div>
         <button>Submit</button>
     </form>
