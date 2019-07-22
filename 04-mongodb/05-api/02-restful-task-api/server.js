@@ -9,6 +9,8 @@ const cors = require('cors');
 const port = process.env.PORT || 8000;
 const app = express();
 
+app.use(express.static( __dirname + '/public/dist/public' ));
+
 
 app.use(helmet())
   .use(compress())
