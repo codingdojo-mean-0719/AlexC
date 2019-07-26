@@ -1,0 +1,10 @@
+<app-note-new (createBook)='onCreate(book)'></app-note-new>
+
+<section>
+    <fieldset>
+      <legend>Notes:</legend>
+      <div *ngFor='let note of notes'>
+        {{ note.content }}
+      </div>
+  </fieldset>
+</section>

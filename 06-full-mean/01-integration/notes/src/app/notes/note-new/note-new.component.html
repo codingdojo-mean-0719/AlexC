@@ -1,0 +1,8 @@
+<section>
+  <fieldset>
+    <legend>Note:</legend>
+      <form (submit)='onSubmit($event, noteForm)' autocomplete="off" #noteForm='ngForm'>
+        <input type="text" name="note"><button>Add Note</button>
+      </form>
+  </fieldset>
+</section>
